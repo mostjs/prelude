@@ -16,7 +16,7 @@
     "build:flow": "cpy src/index.js.flow dist && cpy src/index.js.flow dist --rename=index.es.js.flow",
     "prepublish": "npm run build",
     "test": "npm run test:lint && npm run test:unit && npm run test:flow",
-    "test:lint": "jsinspect src && jsinspect -t 45 test && eslint src test",
+    "test:lint": "eslint src test",
     "test:unit": "nyc mocha -r buba/register",
     "test:flow": "flow check"
   },
@@ -41,7 +41,6 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.44.2",
-    "jsinspect": "^0.12.4",
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
     "power-assert": "^1.4.2",
