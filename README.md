@@ -1,15 +1,3 @@
-# most prelude
+# Moved to @most/core
 
-Core set of function and immutable array combinators for `@most` packages.
-
-## install
-
-```
-npm install --save @most/prelude
-```
-
-## API
-
-*Coming soon*
-
-For now, check [the source](src).
+The `@most/prelude` repo has to [@most/core](https://github.com/mostjs/core).
